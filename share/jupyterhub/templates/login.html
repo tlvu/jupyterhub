@@ -54,6 +54,8 @@
       val="{{username}}"
       tabindex="1"
       autofocus="autofocus"
+      {# allow adding extra HTML Input Attributes (pattern, placeholder, title, minlenght, maxlenght, ...) #}
+      {% block username_input_attribs %}{% endblock username_input_attribs %}
     />
     <label for='password_input'>Password:</label>
     <input
@@ -63,6 +65,8 @@
       name="password"
       id="password_input"
       tabindex="2"
+      {# allow adding extra HTML Input Attributes (pattern, placeholder, title, minlenght, maxlenght, ...) #}
+      {% block password_input_attribs %}{% endblock password_input_attribs %}
     />
 
     <div class="feedback-container">
